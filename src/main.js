@@ -4,10 +4,18 @@
     
     if (!toggle) return;
 
+    // Вибрация (тест)
+    const vibrate = (pattern) => {
+      if ('vibrate' in navigator) {
+        navigator.vibrate(pattern);
+      }
+    };
+  
     const setTheme = (theme) => {
         document.documentElement.dataset.theme = theme;
         localStorage.setItem('theme', theme);
         if (meta) meta.content = theme === 'dark' ? '#000' : '#fff';
+        vibrate(10);
     };
 
     toggle.onclick = () => {
@@ -37,6 +45,11 @@
         if (target !== hoverEl) {
             hoverEl?.classList.remove('hover');
             target?.classList.add('hover');
+
+            if (target && !hoverEl) {
+              vibrate(8);
+            }
+          
             hoverEl = target;
         }
     };
@@ -53,7 +66,12 @@
     // мобайл
     document.addEventListener('touchstart', e => {
         const touch = e.touches[0];
-        if (touch) updateCursor(touch.clientX, touch.clientY);
+        if (touch) {
+          updateCursor(touch.clientX, touch.clientY);
+          // Вибрация по нажатию
+          const target = document.elementFromPoint(touch.clientX, touch.clientY)?.closest('.link');
+          if (target) vibrate(15);
+        }
     }, { passive: true });
     
     document.addEventListener('touchmove', e => {
