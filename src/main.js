@@ -8,6 +8,9 @@
     const vibrate = (pattern) => {
       if ('vibrate' in navigator) {
         navigator.vibrate(pattern);
+        console.log('Vibration: ', pattern); //дебаг
+      } else {
+        console.log('Vibration no work');
       }
     };
   
@@ -46,7 +49,7 @@
             hoverEl?.classList.remove('hover');
             target?.classList.add('hover');
 
-            if (target && !hoverEl) {
+            if (target) {
               vibrate(8);
             }
           
@@ -68,9 +71,8 @@
         const touch = e.touches[0];
         if (touch) {
           updateCursor(touch.clientX, touch.clientY);
-          // Вибрация по нажатию
           const target = document.elementFromPoint(touch.clientX, touch.clientY)?.closest('.link');
-          if (target) vibrate(15);
+          if (target) vibrate(10);
         }
     }, { passive: true });
     
