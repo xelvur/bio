@@ -4,7 +4,7 @@ Personal website / bio page.
 
 ## Live Demo
 
-Visit: [https://xelvur.github.io/bio/](https://xelvur.github.io/bio/)
+Visit: [click to visit](https://xelvur.github.io/bio/)
 
 ## Features
 
