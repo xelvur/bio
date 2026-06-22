@@ -4,7 +4,7 @@
     
     if (!toggle) return;
 
-    // Вибрация (тест)
+    // Вибрация
     const vibrate = (pattern) => {
       if ('vibrate' in navigator) {
         navigator.vibrate(pattern);
@@ -18,7 +18,7 @@
         document.documentElement.dataset.theme = theme;
         localStorage.setItem('theme', theme);
         if (meta) meta.content = theme === 'dark' ? '#000' : '#fff';
-        vibrate(10);
+        vibrate(25);
     };
 
     toggle.onclick = () => {
@@ -50,7 +50,7 @@
             target?.classList.add('hover');
 
             if (target) {
-              vibrate(8);
+              vibrate(25);
             }
           
             hoverEl = target;

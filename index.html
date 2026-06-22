@@ -6,12 +6,12 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="description" content="Xelvur">
     
-    <link rel="canonical" href="https://xelvur.github.io/">
+    <link rel="canonical" href="https://xelvur.github.io/bio">
     
     <meta property="og:title" content="Xelvur">
     <meta property="og:description" content="website xelvur">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://xelvur.github.io/">
+    <meta property="og:url" content="https://xelvur.github.io/bio">
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Xelvur">
@@ -19,9 +19,9 @@
     
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
     
-    <title>b.y Xelvur</title>
+    <title>Xelvur | link</title>
     
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
@@ -37,6 +37,14 @@
         <defs>
             <symbol id="icon-arrow" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </symbol>
+            <symbol id="icon-avatar" viewBox="0 0 24 24">
+                <path d="M12 12c1.93 0 3.5-1.57 3.5-3.5S13.93 5 12 5s-3.5 1.57-3.5 3.5S10.07 12 12 12zm0 2c-3.31 0-6 1.79-6 4v1c0 .55.45 1 1 1h10c.55 0 1-.45 1-1v-1c0-2.21-2.69-4-6-4z" fill="currentColor"/>
+            </symbol>
+            <symbol id="icon-godot" viewBox="0 0 1024 1024">
+                <path fill-rule="evenodd" d="m105 673 152 14q12 1 15 14l4 67 132 10 8-61q2-11 15-15h162q13 4 15 15l8 61 132-10 4-67q3-13 15-14l152-14V427q30-39 56-81-35-59-83-108-43 20-82 47-40-37-88-64 7-51 8-102-59-28-123-42-26 43-46 89-49-7-98 0-20-46-46-89-64 14-123 42 1 51 8 102-48 27-88 64-39-27-82-47-48 49-83 108 26 42 56 81zm0 33v39c0 276 813 276 814 0v-39l-134 12-5 69q-2 10-14 13l-162 11q-12 0-16-11l-10-65H446l-10 65q-4 11-16 11l-162-11q-12-3-14-13l-5-69zM299 436a90 90 0 1 0 0 180 90 90 0 1 0 0-180zm426 0a90 90 0 1 0 0 180 90 90 0 1 0 0-180z" fill="currentColor"/>
+                <circle cx="307" cy="532" r="60" fill="currentColor"/>
+                <circle cx="717" cy="532" r="60" fill="currentColor"/>
             </symbol>
         </defs>
     </svg>
@@ -55,7 +63,8 @@
         <header>
             <div class="avatar">
                 <svg viewBox="0 0 24 24">
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="currentColor"/>
+                    <use href="#icon-avatar"/>
+                    <!-- <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="currentColor"/> -->
                 </svg>
             </div>
             <h1>X E L V U R</h1>
@@ -63,7 +72,8 @@
         </header>
         
         <nav class="links">
-            <a href="https://t.me/score50/3" class="link" target="_blank" rel="noopener noreferrer">
+            <!-- Telegram bio -->
+            <a href="https://t.me/score50" class="link" target="_blank" rel="noopener noreferrer">
                 <div class="link-left">
                     <svg viewBox="0 0 24 24">
                         <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.568 8.16l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.12L8.32 13.617l-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.954z" fill="currentColor"/>
@@ -72,15 +82,26 @@
                 </div>
                 <svg class="arrow"><use href="#icon-arrow"/></svg>
             </a>
+            <!-- channel -->
+            <a href="https://t.me/wensyrvdr" class="link" target="_blank" rel="noopener noreferrer">
+                <div class="link-left">
+                    <svg viewBox="0 0 1024 1024">
+                        <use href="#icon-godot"/>
+                    </svg>
+                    <span>Channel</span>
+                </div>
+                <svg class="arrow"><use href="#icon-arrow"/></svg>
+            </a>
+            <!-- github -->
             <a href="https://github.com/Xelvur" class="link" target="_blank" rel="noopener noreferrer">
                 <div class="link-left">
                     <svg viewBox="0 0 24 24">
-                        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.565 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" fill="currentColor"/>
-                    </svg>
+                        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.565 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" fill="currentColor"/>                    </svg>
                     <span>Github</span>
                 </div>
                 <svg class="arrow"><use href="#icon-arrow"/></svg>
             </a>
+            <!-- contact -->
             <a href="https://t.me/xelvurs" class="link" target="_blank" rel="noopener noreferrer">
                 <div class="link-left">
                     <svg viewBox="0 0 24 24">
@@ -96,6 +117,6 @@
     <footer>
         <p>© 2026 Xelvur</p>
     </footer>    
-    <script src="src/main.js" defer></script>
+    <script src="src/script.js" defer></script>
 </body>
 </html>
